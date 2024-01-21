@@ -1,0 +1,20 @@
+1) Install PyInstaller: Open a command prompt and run the following command to install PyInstaller:
+>> pip install pyinstaller
+
+2) Navigate to Your Project Directory: Open the command prompt, navigate to the directory where your
+Python script (or main script) is located.
+
+in our case >> C:\Users\shashank\PycharmProjects\IMS
+
+3) Create Executable: Run the following command to create an executable:
+pyinstaller --onefile your_script.py
+in our case
+>> pyinstaller --onefile main.py
+
+OR
+Specify Output Directory: When using PyInstaller, try specifying an output directory for the generated
+executable rather than using the default dist folder. For example:
+>> pyinstaller --onefile --distpath C:\OutputPath your_script.py
+in our case >> pyinstaller --onefile --distpath C:\Users\shashank\Desktop\Sonu main.py
+
+4) Run the executable file
